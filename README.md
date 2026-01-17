@@ -14,6 +14,12 @@ experiments, and learning.
 - Hour-wise and weekday-wise analysis
 - Visualization using Python and Power BI (planned)
 
+## Future Scope
+- Build a time-series based prediction model for EV charging demand
+- Forecast peak-hour load using historical charging patterns
+- Experiment with regression and basic machine learning models
+- Integrate predicted insights into Power BI dashboards.
+
 ## Tools & Technologies
 - Python (Pandas, NumPy, Matplotlib)
 - Jupyter Notebook

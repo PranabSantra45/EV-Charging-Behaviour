@@ -12,7 +12,7 @@ experiments, and learning.
 - Data cleaning and preprocessing
 - Date & time feature engineering
 - Hour-wise and weekday-wise analysis
-- Visualization using Python and Power BI (planned)
+- Visualization using Python and Power BI
 
 ## Future Scope
 - Build a time-series based prediction model for EV charging demand
@@ -21,9 +21,9 @@ experiments, and learning.
 - Integrate predicted insights into Power BI dashboards.
 
 ## Tools & Technologies
-- Python (Pandas, NumPy, Matplotlib)
+- Python (Pandas, NumPy, Matplotlib, sc-kit learn)
 - Jupyter Notebook
-- Power BI (upcoming)
+- Power BI
 
 ## Notes
 This repository will be updated gradually as the experiment progresses.

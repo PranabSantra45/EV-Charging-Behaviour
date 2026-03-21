@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV Energy Predictor</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 30px;
+            margin: 40px auto;
+            width: 350px;
+            border-radius: 15px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            padding: 10px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #22c55e;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2> Advanced Energy Prediction</h2>
+
+    <input id="time" placeholder="Hour (0 - 23)">
+    <input id="duration" placeholder="Charging Duration (minutes)">
+    <input id="battery" placeholder="Battery Capacity (kWh)">
+    <input id="soc_start" placeholder="Initial SOC ( % )">
+    <input id="soc_end" placeholder="Final SOC ( % )">
+    <input id="charging_rate" placeholder="Charging Rate (kW)">
+    <input id="temperature" placeholder="Temperature ( °C )">
+
+    <select id="day">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+    </select>
+
+    <select id="charger_type">
+        <option>Slow</option>
+        <option>Fast</option>
+        <option>DC Fast</option>
+    </select>
+
+    <select id="location_type">
+        <option>Urban</option>
+        <option>Highway</option>
+        <option>Residential</option>
+    </select>
+
+    <input id="vehicle_model" placeholder="Vehicle Model">
+
+    <button onclick="predictEnergy()">Predict Energy</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
